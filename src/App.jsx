@@ -23,7 +23,7 @@ export default function App() {
         body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
       })
       .then((res) => res.json())
-      .then((data) => console.log("data bos ",data));
+      .then((data) => setClientSecret(data));
   }, []);
 
   const appearance = {
