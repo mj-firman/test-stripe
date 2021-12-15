@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 // This is a public sample test API key.
 // To avoid exposing it, don't submit any personally identifiable information through requests with this API key.
 // Sign in to see your own test API key embedded in code samples.
-\Stripe\Stripe::setApiKey('sk_test_26PHem9AhJZvU623DfE1x4sd');
+\Stripe\Stripe::setApiKey('sk_test_51K69LZJioYi24CvPJDHSwVZ5PF2bxTsHZIfDzP6pAxtKK1fO7Ln7zHY56ARds6g1Q2BQ9XjYg5p1mGMOv8YCiNzg00aQ6GXJE6');
 
 function calculateOrderAmount(array $items): int {
     // Replace this constant with a calculation of the order's amount

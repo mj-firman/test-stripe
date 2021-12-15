@@ -10,7 +10,7 @@ import "./App.css";
 // This is a public sample test API key.
 // To avoid exposing it, don't submit any personally identifiable information through requests with this API key.
 // Sign in to see your own test API key embedded in code samples.
-const stripePromise = loadStripe("pk_test_qblFNYngBkEdjEZ16jxxoWSM");
+const stripePromise = loadStripe("pk_test_51K69LZJioYi24CvPRwLD08CezL8EvkwijEOlu3kjZajN8J3zVtw821N0zdTLevrUjMbMAGqlC2lHOjvjv08LzMuH00VrrntpSM");
 
 export default function App() {
   const [clientSecret, setClientSecret] = useState("");
@@ -23,7 +23,7 @@ export default function App() {
         body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
       })
       .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
+      .then((data) => console.log("data bos ",data));
   }, []);
 
   const appearance = {
